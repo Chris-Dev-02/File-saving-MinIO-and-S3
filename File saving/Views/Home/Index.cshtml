@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model File_saving.Models.ViewModel.UploadModel
+
+<div class="text-center">
+    <form asp-controller="Home" asp-action="Upload3" enctype="multipart/form-data" method="post">
+        <dl>
+            <dt>
+                <label>File</label>
+            </dt>
+            <dd>
+                <input asp-for="MyFile" type="fyle" />
+            </dd>
+        </dl>
+        <input type="submit" value="Upload"/>
+    </form>   
+</div>
+
+<div>
+    <a target="_blank" href="Home/Download3/3">Download the file</a>
+</div>
